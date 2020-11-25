@@ -1,0 +1,127 @@
+/* REVIEWS FULL PAGE STYLING */
+* {
+  box-sizing: border-box;
+  height:100%;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  overscroll-behavior: none;
+  border-width:0.05px;
+}
+#containerSection{
+  background: url(images/fullreviewsbackground.jpg)
+  no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding: 5px;
+  text-align:center;
+  margin:20px auto;
+}
+/* DIVS HOLDING REW P */
+.independentReviews{
+  padding:10px;
+  overflow:hidden;
+  height:auto;
+  width:85%;
+  margin:10px;
+  border-width:0.05px;
+  border-bottom:0.05px solid red;
+  background-image: linear-gradient(
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		);
+}
+
+/* ----- */
+/* REVIEWS TEXT PARAGRAPH */
+/* DISPLAY WEBKIT-BOX FOR LINE CLAMPING */
+.reviewP{
+width:85%;
+line-height: 1.3;
+font-family: 'Raleway', sans-serif;
+text-align: left;
+letter-spacing: 0.04em;
+font-size: 1.2rem;
+margin:10px 15px;
+}
+/* CREATE CUSTOM BREAK */
+.addLineBreak{
+	display:block;
+	margin-bottom:1em;
+}
+.articleTitle{
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.03em;
+	font-size: 1.1rem;
+	border-bottom:0.5px solid red;
+	padding-bottom:0.5px;
+}
+.magLogo{
+  height:100px;
+  width:100px;
+  float:left;
+  margin:5px 10px 3.01px 4px;
+}
+
+/* RETURN ICON */
+#returnIcon{
+  position:fixed;
+  left: 20px;
+  bottom: 15px;
+  z-index:999999;
+  max-height: 25px;
+  min-height:15px;
+	width:25px;
+	transition: transform .2s; /* Animation */
+}
+
+#returnIcon:hover{
+	 transform: scale(1.4);
+}
+
+
+/* MEDIA QUERIES 500PX OR LESS */
+@media screen and (max-width: 500px){
+
+  h1{
+    font-size: 3rem;
+    font-size: 8.5vw;
+    margin: 10px auto;
+  }
+
+  .reviewP{
+line-height: 1.4;
+font-size: 1.2rem;
+font-size: 3.35vw;
+  }
+
+  #returnIcon {
+    left: 10px;
+    top: 50vh;
+    bottom: 50vh;
+    max-height: 30px;
+    min-height: 25px;
+    width: 30px;
+}
+
+/* MEDIA QUERIES 375PX OR LESS */
+
+@media screen and (max-width: 375px){
+  .reviewP {
+      font-size: 1.2rem;
+      font-size: 4.5vw;
+}

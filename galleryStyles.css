@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-width:0.05px;
+}
+
+    .swiper-container {
+      width: 95%;
+      height: 100%;
+      padding-top: 30px;
+      padding-bottom: 60px;
+      margin: 3px auto 5px auto;
+    }
+
+/* individual div with images */
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 350px;
+      height: 350px;
+    }
+
+/* STYLE INDIVIDUAL ARROWS */
+.myArrow{
+  color:rgba(240, 52, 52, 1);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 2.5rem !important;
+}
+
+/* STYLE IMG DIRECTLY */
+/* MAKE IMG FIT TO BOX, GIVE IMAGE A REFLECTION */
+
+img{
+  width: 100%;
+  max-width: 350px;
+  height:100%;
+  max-height: 350px;
+
+-webkit-box-reflect: below 0.05px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.3)));
+}
+
+
+/* BREAK POINT 500 PX OR LESS */
+@media screen and (max-width: 500px){
+
+/* HEADING */
+  #gallHeaderP{
+  	font-size:1.6rem;
+  	font-size:4.6vw;
+  	width:100%;
+  }
+/* UNDERLINE */
+  #myUnderlineSpan{
+  	width:70%;
+  }
+  /* SUB TEXT */
+  #subTxt{
+  	font-size: 1rem;
+  	font-size: 2.8vw;
+  }
+
+/* DIV HOLDING IMG */
+   .swiper-slide {
+      width: 400px;
+      height: 400px;
+    }
+
+/*   MAKE IMG FIT IN BREAK POINT */
+  img{
+    width:100%;
+    max-width: 400px;
+  }
+
+  #copyRightTxt{
+  	font-size:1rem;
+  	font-size:3.5vw;
+  }
+
+}
+
+/* BREAK POINT 375 OR LESS */
+@media screen and (max-width: 375px){
+  #gallContainerDiv{
+    width:100%;
+  }
+  #gallHeaderDiv{
+    max-height:80px;
+  }
+  #gallHeaderP{
+    font-size: 1.8rem;
+    font-size:6.7vw;
+  	width:100%;
+  }
+  #myUnderlineSpan{
+    width:80%;
+  }
+  #subTxt{
+    font-size: 1.1rem;
+    font-size: 4.1vw;
+  }
+  .swiper-container{
+    padding:40px 1px;
+    margin:2px auto;
+  }
+
+  /* DIV HOLDING IMG */
+     .swiper-slide {
+        width: 375px;
+        height: 375px;
+      }
+
+  /*   MAKE IMG FIT IN BREAK POINT */
+    img{
+      width:100%;
+      max-width: 375px;
+    }
+}

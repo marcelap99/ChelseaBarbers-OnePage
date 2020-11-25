@@ -1,0 +1,966 @@
+/* Main Doc Styling */
+/* keeps from screen pulling down white space */
+* {
+	box-sizing: border-box;
+  margin: 0;
+	overscroll-behavior: none;
+  font-size: 14px;
+  line-height: 1.42857143;
+	color: white;
+	border-width:0.05px;
+}
+html{
+  height:100%;
+  width:100%;
+	scroll-snap-type: y mandatory;
+	scroll-padding: 150px 0 0 0;
+	scroll-margin:150px 0 0 0;
+}
+/* removes scroll bars */
+html::-webkit-scrollbar { width: 0 !important }
+/* contains all sections nav & burger*/
+#mainContainer{
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
+
+section .nestedSection{
+	height: 84vh;
+  width: 100vw;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	text-align: center;
+	font-size: 2rem;
+	padding: .2rem;
+	position: relative;
+	margin:0px;
+	border-bottom: .5px solid #878686;
+}
+
+/* SECTION 1 ABOUT */
+#section1{
+	margin-top:150px;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(images/AboutBackgroundRazor-Guide-Gear-Patrol-Lead-Full-1600.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.infoDiv{
+	height: 85%;
+	width: 82%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 5px;
+	position: relative;
+	top:85px;
+	overflow: auto;
+	padding-bottom:15px;
+	/* RED LINES ON THE SIDE */
+	border-width: 1px;
+  border-style: solid;
+  border-image:
+     linear-gradient(
+      to bottom,
+      red 10%,
+      rgba(0, 0, 0, 0) 90%
+    ) 1 100%;
+}
+
+#AboutHeading{
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.6rem;
+	margin:5px auto 3px auto;
+	font-family: 'Playfair Display', serif;
+}
+
+#myUnderlineAbout{
+	margin:2px auto 10px auto;
+	height:1px;
+	width:30%;
+	background-image: linear-gradient(to right, rgba(240, 52, 52, 0),rgba(240, 52, 52, 1),rgba(240, 52, 52, 1), rgba(240, 52, 52, 0) );
+}
+
+
+.introParagraph{
+	line-height:1.5;
+	font-family: 'Raleway', sans-serif;
+	text-align:left;
+	letter-spacing: 0.1em;
+	font-size: 1.3rem;
+	margin: 8px 40px;
+	white-space: pre-line;
+}
+
+
+ /* SECTION 2 HOURS & SVC */
+#section2{
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url(images/hoursServicesBackground.jpg);
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+
+}
+
+#hrsAndSvc{
+	height: 85%;
+	width: 92%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 5px;
+	position: relative;
+	top:85px;
+}
+
+#hrsAndSvcHeaderDiv{
+	min-height: 50px;
+	max-height: 150px;
+	width: 100%;
+}
+
+#hrsSvcHeading{
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.6rem;
+	margin:5px auto 3px auto;
+	font-family: 'Playfair Display', serif;
+}
+
+#myUnderlineHrs{
+	margin:2px auto 10px auto;
+	height:1px;
+	width:33%;
+	background-image: linear-gradient(to right, rgba(240, 52, 52, 0),rgba(240, 52, 52, 1),rgba(240, 52, 52, 1), rgba(240, 52, 52, 0) );
+}
+
+.hrsSvcDivs{
+	margin:0;
+	display:inline-block;
+	height: 90%;
+	width: 50%;
+}
+
+#hoursDiv{
+float:right;
+}
+
+#serviceDiv{
+float:left;
+}
+
+.svcLable{
+	width: 25%;
+	border-bottom: 0.05px solid red;
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.6rem;
+	margin:5px auto 20px auto;
+	font-family: 'Playfair Display', serif;
+}
+
+.hrsSvcTxt{
+	margin-top: 20px;
+}
+.myUl{
+	margin: 25px auto -25px auto;
+	width: 70%;
+}
+
+li{
+	list-style:none;
+	align-items: left !important;
+	text-align:left !important;
+	line-height:1.7;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 1.5rem;
+	margin: 10px 5px;
+}
+
+
+/* SECTION 3 CONTACT & MAP */
+#section3{
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)
+		), url(images/contactPage.jpg);
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+}
+
+.contactBorder{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+#containContactDiv{
+	height: 85%;
+	width: 87%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 5px;
+	position: relative;
+	top:85px;
+}
+
+#contactHeaderDiv{
+	min-height: 50px;
+	max-height: 150px;
+	width: 100%;
+}
+
+#contactHeading{
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.6rem;
+	margin:5px auto 3px auto;
+	font-family: 'Playfair Display', serif;
+}
+
+#myUnderlineCon{
+	margin:2px auto 10px auto;
+	height:1px;
+	width:33%;
+	background-image: linear-gradient(to right, rgba(240, 52, 52, 0),rgba(240, 52, 52, 1),rgba(240, 52, 52, 1), rgba(240, 52, 52, 0) );
+}
+
+.contactDiv{
+	margin:0;
+	display:inline-block;
+	height: 80%;
+	width: 50%;
+}
+
+#contactInfo{
+	float:left;
+	overflow:hidden;
+	position:relative;
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)
+		);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+}
+
+#addressUL{
+	margin: 40px auto -40px auto;
+}
+.address{
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: left;
+}
+/* DIV THAT HOLDS ICONS */
+#socialMediaLinks{
+	height: 100px;
+	width:70%;
+	position:absolute;
+	bottom:0;
+	right:-15%;
+	left:13%;
+	margin:10px;
+}
+
+/* SOCIAL MEDIA Icon LINK ANCHORS */
+.SocialMediaIcon{
+	height: 75px;
+	width:75px;
+	margin:20px;
+	transition: transform .2s; /* Animation */
+}
+/* ON HOVER EFFECT ON ICONS */
+.SocialMediaIcon:hover{
+	 transform: scale(1.5);
+}
+
+/* DIV HOLDING MAP STYLES FROM JS FILE */
+#map{
+	float:right;
+}
+/* CLICK HERE TO SEND BUTTON */
+#contactButtonDiv{
+	width: 100%;
+	text-align: center;
+	height: 55px;
+	overflow: hidden;
+}
+
+#contactButtonTxt{
+	margin: 15px auto;
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.1rem;
+	font-family: 'Playfair Display', serif;
+	width:45%;
+	padding:0;
+	height:55px;
+}
+
+#contactAnchor{
+	text-decoration: none;
+	transition: 0.3s;
+	position:relative;
+}
+
+#contactAnchor:hover {
+color: red;
+font-size:1.2rem;
+}
+
+a#contactAnchor:before {
+	content: "";
+  margin-left: -5px;
+  position: absolute;
+	width:105%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  text-algin:center;
+}
+
+a#contactAnchor:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+/* SECTION 4 REVIEWS */
+#section4{
+	background: url(images/reviewsPage.jpg)
+	no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+
+#reviews4wrapperDiv{
+	height: 85%;
+	width: 92%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 5px;
+	position: relative;
+	top:85px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+#reviewsHeaderDiv{
+	min-height: 50px;
+	max-height: 75px;
+	width: 100%;
+	margin-bottom: -20px;
+
+}
+
+#reviewHeading{
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.6rem;
+	margin:5px auto 3px auto;
+	font-family: 'Playfair Display', serif;
+}
+
+#myUnderlineRW{
+	margin:2px auto;
+	height:1px;
+	width:18%;
+	background-image: linear-gradient(to right, rgba(240, 52, 52, 0),rgba(240, 52, 52, 1),rgba(240, 52, 52, 1), rgba(240, 52, 52, 0) );
+}
+
+/* DIV'S HOLDING IND REVIEWS */
+.individualReviews{
+	overflow: auto;
+	margin: -30px auto 5px auto;
+	min-height:50%;
+	max-height:70%;
+	min-width:25%;
+	max-width:30%;
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.3)
+		);
+}
+/* REVIEWS TEXT PARAGRAPH */
+/* DISPLAY WEBKIT-BOX FOR LINE CLAMPING */
+.reviewsTxtP{
+line-height: 1.4;
+font-family: 'Raleway', sans-serif;
+text-align: left;
+letter-spacing: 0.05em;
+font-size: 1.3rem;
+margin: 20px 40px;
+overflow: hidden;
+display: -webkit-box;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+}
+/* CREATE CUSTOM BREAK */
+.addSpace{
+	display:block;
+	margin-bottom:1em;
+}
+.reviewerTitle{
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.05em;
+	font-size: 1.3rem;
+	border-bottom:0.5px solid red;
+	padding-bottom:0.5px;
+}
+
+/* DIV HOLDING READ MORE ANCH */
+#readMoreDiv{
+	min-height: 30px;
+	max-height: 50px;
+	width:100%;
+	text-align: center;
+	position:absolute;
+	bottom:0px;
+}
+
+#readMoreTxt{
+	margin: 15px auto;
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.4rem;
+	font-family: 'Playfair Display', serif;
+	width:45%;
+	padding:0;
+}
+#readMoreAnch{
+	text-decoration: none;
+	transition: 0.3s;
+	position:relative;
+}
+
+#readMoreAnch:hover {
+color: red;
+font-size:1.5rem;
+}
+
+a#readMoreAnch:before {
+	content: "";
+  margin-left: -5px;
+  position: absolute;
+	width:105%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  text-algin:center;
+}
+
+a#readMoreAnch:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+
+/* SECTION 5 GALLERY */
+#section5{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/galleryBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+}
+
+#gallContainerDiv{
+	/* border: 1px solid red; */
+	height: 85%;
+	width: 92%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 5px;
+	position: relative;
+	top:85px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+#gallHeaderDiv{
+	/* border:1px solid green; */
+	min-height: 65px;
+	max-height: 155px;
+	width: 100%;
+}
+
+#gallHeaderP{
+	width: 20%;
+	letter-spacing: 0.1em;
+	color: white;
+	font-size:1.6rem;
+	margin:2px auto 3px auto;
+	font-family: 'Playfair Display', serif;
+}
+
+#myUnderlineSpan{
+	margin:2px auto;
+	height:1px;
+	width:23%;
+	background-image: linear-gradient(to right, rgba(240, 52, 52, 0),rgba(240, 52, 52, 1),rgba(240, 52, 52, 1), rgba(240, 52, 52, 0) );
+}
+
+#subTxt{
+margin: 3px auto 3px auto;
+letter-spacing: 0.1em;
+color: white;
+font-size:1.1rem;
+font-family: 'Playfair Display', serif;
+width:45%;
+padding:0;
+}
+
+#copyRightDiv{
+	min-height: 30px;
+	max-height: 60px;
+	width: 100%;
+	z-index:100;
+	bottom:0;
+	margin: 10px auto;
+}
+
+#copyRightTxt{
+	width: 100%;
+	letter-spacing: 0.1em;
+	color: white;
+	margin:2px auto 3px auto;
+	font-family: 'Playfair Display', serif;
+}
+
+
+/* SWIPER JS GALLERY galleryStyles.css */
+
+
+
+/* ---MEDIA QUERIES 500 PX OR LESS--- */
+@media screen and (max-width: 500px){
+
+	section .nestedSection{
+		border-bottom:none;
+	}
+
+	/* ABOUT SECTION */
+
+	#AboutHeading{
+		font-size:1.6rem;
+		font-size:4.6vw;
+	}
+
+	#myUnderlineAbout{
+		width:45%;
+	}
+
+	.introParagraph{
+		font-size: 1.2rem;
+		font-size: 3.5vw;
+	}
+
+	/* HOURS SVC SECTION */
+
+	#hrsSvcHeading{
+		font-size:1.6rem;
+		font-size:4.6vw;
+	}
+
+	#myUnderlineHrs{
+		width:80%;
+	}
+
+	.svcLable{
+		width: 45%;
+		font-size:1.4rem;
+		font-size:3.9vw;
+
+	}
+
+	.myUl{
+		width: 80%;
+	}
+
+	li{
+		line-height:1.5;
+		font-size: 1.21rem;
+		font-size: 3.35vw;
+	}
+
+	/* CONTACT SECTION */
+
+
+	#containContactDiv{
+		width: 95%;
+	}
+
+	#contactHeading{
+		font-size:1.6rem;
+		font-size:4.6vw;
+	}
+
+	#myUnderlineCon{
+		width:90%;
+	}
+
+	.address{
+		line-height:1.5;
+		font-size: 1.5rem;
+		font-size: 4.2vw;
+	}
+
+	#addressUL{
+    margin: 20px auto -20px auto;
+    padding: 10px;
+	}
+
+	#socialMediaLinks {
+    height: 75px;
+    width: 90%;
+    bottom: 0;
+		right: 1%;
+		left: 1%;
+		margin: 5px auto;
+	}
+
+	.SocialMediaIcon {
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+	}
+
+	/* ON HOVER EFFECT ON ICONS */
+	.SocialMediaIcon:hover{
+		 transform: scale(1.1);
+	}
+
+	#contactButtonDiv {
+    height: 50px;
+}
+
+	#contactButtonTxt {
+	    font-size: 1rem;
+			font-size: 3vw;
+	    width: 100%;
+	}
+
+	/* REVIEWS SECTION */
+
+	#reviewsHeaderDiv{
+		margin-bottom:-40px;
+	}
+
+	#reviewHeading{
+	font-size:1.6rem;
+	font-size:4.6vw;
+}
+
+#myUnderlineRW {
+    width: 50%;
+}
+
+.individualReviews{
+	max-height:140px;
+	min-height:139px;
+	max-width: 95%;
+	min-width: 94%;
+	border-bottom: .5px solid gray;
+	border-top: .5px solid gray;
+}
+
+#review1{
+ margin: 20px auto 1px auto;
+}
+
+#review2{
+margin: -20px auto 1px auto;
+}
+
+#review3{
+margin: -20px auto 5px auto;
+}
+
+.reviewsTxtP {
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-size: 1.1rem;
+    margin: 5px 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.reviewerTitle {
+    letter-spacing: 0.05em;
+    font-size: 1.1rem;
+}
+.addSpace {
+    margin-bottom: 0.05em;
+}
+
+#readMoreTxt{
+	font-size: 1rem;
+	font-size: 2.8vw;
+	width: 100%;
+}
+
+#readMoreAnch:hover {
+font-size:1.1rem;
+
+}
+
+/* GALLERY SECTION galleryStyles.css */
+
+}
+
+
+
+/* ---MEDIA QUERIES 375 PX OR LESS---*/
+
+@media screen and (max-width: 375px){
+
+/* ALL NESTED SECTIONS */
+	section .nestedSection {
+    height: 82vh;
+}
+
+	/* ABOUT SECTION 375PX */
+	#AboutHeading{
+		font-size: 1.8rem;
+		font-size:6.7vw;
+	}
+	#myUnderlineAbout{
+		width:78%;
+	}
+	.introParagraph{
+		font-size: 1.2rem;
+		font-size:4.5vw;
+		margin: 8px 20px;
+	}
+
+	/* HOURS SVC SECTION 375PX */
+
+	/* SEPARATE DIVS */
+
+	/* container div */
+	.hrsAndSvc{
+	display:block;
+	margin:10px auto 2px auto;
+	}
+
+	#serviceDiv{
+	float:none;
+	height:200px;
+	width:100%;
+	}
+
+	#hoursDiv{
+		float:none;
+		height:200px;
+		width:100%;
+	}
+ /* class that affects both divs */
+	.hrsSvcDivs{
+	margin:5px auto;
+	}
+
+	#hrsAndSvcHeaderDiv{
+		margin-bottom:10px;
+	}
+
+	#hrsSvcHeading{
+		font-size: 1.8rem;
+		font-size:6.7vw;
+	}
+
+	#myUnderlineHrs{
+		width:100%;
+		margin:0px;
+	}
+
+	.svcLable{
+		width: 30%;
+		font-size:1.25rem;
+		font-size:4.7vw;
+	}
+
+	/* div contents */
+
+	.myUl{
+		margin:5px auto;
+		width:90%;
+	}
+
+	li{
+		line-height:1.3;
+		font-size: 1rem;
+		font-size: 3.75vw;
+	}
+
+/* CONTACT SECTION */
+
+	#contactHeaderDiv{
+		height:75px;
+		margin-bottom:-20px;
+		width:95%;
+	}
+
+	#contactHeading{
+		font-size: 1.8rem;
+		font-size:6.7vw;
+	}
+
+	#myUnderlineCon{
+		width:100%;
+	}
+
+/* div holding contact info */
+	#contactInfo{
+		float: none;
+		position:relative;
+		display:block;
+		margin: -30px auto 5px auto;
+		height: 200px;
+	}
+
+	/* div holding map */
+	#map {
+    float: none;
+    position:static;
+		display:block;
+		margin:5px auto 3px auto;
+		height: 250px;
+}
+
+	/* class on both divs */
+	.contactDiv{
+		width: 90%;
+	}
+	.contactBorder{
+		border-top:none;
+	}
+
+	/* code for address div contents */
+	#addressUL{
+    margin: 5px auto 5px 10px;
+    padding: 0;
+    height: 110px;
+		width:95%;
+	}
+	li.address{
+		line-height:1;
+		font-size:1.25rem;
+		font-size:4.7vw;
+	}
+	#socialMediaLinks{
+		position:absolute;
+		bottom:0;
+		margin:2px auto;
+		width:98%;
+	}
+
+	.SocialMediaIcon{
+		margin:3px 20px;
+	}
+
+	#contactButtonDiv{
+		margin: 1px auto 1px auto;
+		width:90%;
+		height:55px;
+		padding:0;
+		text-align:center;
+		align-items: center;
+	}
+
+	p#contactButtonTxt{
+		padding:0;
+		margin:1px auto;
+		font-size: 2rem;
+		font-size: 7.5vw;
+		text-align:center;
+		align-items: center;
+	}
+
+	/* REVIEWS SECTION */
+	#reviewsHeaderDiv{
+		margin-bottom:-45px;
+	}
+
+	#reviewHeading{
+		font-size: 1.8rem;
+		font-size:6.7vw;
+	}
+	#myUnderlineRW{
+		width:65%;
+	}
+	.individualReviews {
+    max-height: 150px;
+    min-height: 140px;
+}
+.reviewsTxtP {
+		font-size: 1.1rem;
+		font-size:4.1vw;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+#readMoreTxt {
+    margin: 5px auto -5px auto;
+		font-size: 2rem;
+		font-size: 7.5vw;
+    width: 100%;
+}
+
+/* GALLERY STYLES IN GALLERYSTYLES.css */
+
+}

@@ -1,0 +1,246 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+	font-family: 'Playfair Display', sans-serif;
+	/* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+  font-size: 14px;
+  line-height: 1.42857143;
+	color: white;
+}
+
+ /* main container holding hero div & nav */
+#headingContainer{
+ z-index:100;
+ position:fixed;
+ top: 0;
+ left:0;
+ /* border: .5px solid gray; */
+ margin: 0px;
+ padding: 0px;
+ width: 100vw;
+ min-height: 250px;
+ max-height:251px;
+ overflow: hidden;
+ color:white;
+}
+
+ /* div holding comp name back img */
+#heroBanner{
+  border-bottom: .5px solid gray;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),url(images/chelseaBarbersNavBar.jpg);
+	background-repeat:no-repeat;
+  background-size:100% 100%;
+  width: 100%;
+  min-height:125px;
+  max-height: 150px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+	z-index: 1;
+
+}
+ /* lead text */
+#compName{
+  letter-spacing: 0.1em;
+  color:white;
+  font-size: 2.8rem;
+  margin: 10px auto 20px auto;
+	font-family: 'Playfair Display', serif;
+	/* font-family: Georgia, serif; */
+  font-weight: bold;
+}
+/* secondary text */
+#compTagLine{
+	font-family:'Raleway', sans-serif;
+  letter-spacing: 0.1em;
+  color: white;
+  font-size:1.5rem;
+  margin: 18px auto 10px auto;
+}
+
+/* Nav Bar */
+.myNavBar {
+  margin: 0px;
+  padding:0px;
+  height:0;
+  width:0;
+  display:none;
+  position: fixed; /* Stay in place */
+  z-index: -100; /* Stay on top */
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+/* Nav Bar Links */
+.myNavBar a {
+  width: 160px;
+  margin: 10px auto 6px auto;
+  text-decoration: none;
+  font-size: 1.2rem;
+	color: white;
+  /* color:#c0c0c0; */
+  display: inline-block;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.myNavBar a:hover {
+	color: red;
+  /* color: #ffffff; */
+}
+/* underline effect */
+.myNavBar a:before {
+  content: "";
+  margin-left: -5px;
+  position: absolute;
+  width: 170px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  text-algin:center;
+}
+
+.myNavBar a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* icon burger button */
+#nav-toggle {
+  position: absolute;
+  right: 15px;
+  bottom: 45px;
+  z-index:100;
+}
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.activateAnimation span {
+  background-color: transparent;
+}
+#nav-toggle.activateAnimation span:before, #nav-toggle.activateAnimation span:after {
+  top: 0;
+}
+#nav-toggle.activateAnimation span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.activateAnimation span:after {
+  transform: rotate(-45deg);
+}
+
+/* opens nav bar from left upper corner */
+.openNav{
+  width: 100%;
+  height:90px;
+  margin-top:-4.5px;
+}
+
+/* MEDIA QUERIES 500PX OR LESS  */
+
+@media screen and (max-width: 500px){
+
+	/* div holding comp name back img */
+	#heroBanner{
+	height: 150px;
+	}
+	 /* lead text */
+	#compName{
+	  letter-spacing: 0.3em;
+	  font-size: 2.1rem;
+	  margin: 10px auto;
+	}
+	/* secondary text */
+	#compTagLine{
+	  letter-spacing: 0.3em;
+	  font-size:1.2rem;
+	  margin: 10px auto 10px auto;
+	}
+	/* Nav Bar Links */
+	.myNavBar a {
+	  width: 60px;
+	  margin: 5px auto 5px auto;
+	  font-size: 1.1rem;
+	}
+	/* underline effect */
+	.myNavBar a:before {
+	  width: 70px;
+	}
+
+}
+
+/* MEDIA QUERIES 375PX OR LESS  */
+
+@media screen and (max-width: 375px){
+
+	/* div holding comp name back img */
+	#heroBanner{
+	height: 150px;
+	}
+	 /* lead text */
+	#compName{
+	  letter-spacing: 0.2em;
+	  font-size: 1.85rem;
+		font-size:7vw;
+	  margin: 5px auto;
+	}
+	/* secondary text */
+	#compTagLine{
+	  letter-spacing: 0.3em;
+	  font-size:1.2rem;
+	  margin: 10px auto 10px auto;
+	}
+	/* Nav Bar Links */
+	.myNavBar a {
+	  width: 60px;
+	  margin: 5px auto 5px auto;
+	  font-size: 1.1rem;
+	}
+	/* underline effect */
+	.myNavBar a:before {
+	  width: 70px;
+	}
+
+}
